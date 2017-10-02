@@ -464,12 +464,14 @@ public class cicilanKredit extends javax.swing.JFrame {
         kreditText.setText("Rp. "+String.valueOf(Math.ceil(hitung.cicilianPerBulan())));
         bungaText.setText(cetakBunga);
         if (cicilan > limit) {
+            //change image icon to button-cross.png 
             imageLabel.setIcon(new ImageIcon(getClass().getResource("/co/id/credit/button-cross.png")));
             totalText.setText("0");
             kreditText.setText("0");
             bungaText.setText("0");
             labelTerima.setText("Tidak");
         } else if (limit > cicilan) {
+            //change image icon to button-check.png 
             imageLabel.setIcon(new ImageIcon(getClass().getResource("/co/id/credit/button-check.png")));
             labelTerima.setText("Ya");
         }
