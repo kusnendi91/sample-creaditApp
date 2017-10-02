@@ -441,7 +441,6 @@ public class cicilanKredit extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButton1MouseClicked
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
         try{
         hitung.setGaji(Double.parseDouble(penghasilanText.getText()));
         hitung.setDp(Double.parseDouble(dpText.getText()));
@@ -476,14 +475,14 @@ public class cicilanKredit extends javax.swing.JFrame {
             labelTerima.setText("Ya");
         }
 
-//if user input character or something except number
+//if user input character or something beside number
         } catch (NumberFormatException e){
              JOptionPane.showMessageDialog(rootPane, "Anda memasukan character selain angka pada Finance Information");
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void statusComboItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_statusComboItemStateChanged
-        // TODO add your handling code here:
+        //jika user memilih single disable textbox anakText
         switch (statusCombo.getSelectedItem().toString()) {
             case "Single":
                 anakText.setEnabled(false);
