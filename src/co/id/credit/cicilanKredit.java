@@ -8,7 +8,7 @@ package co.id.credit;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
-import calculate.Calculate;
+import calculate.Calculate; //import class that used for calculation
 
 /**
  *
@@ -474,6 +474,7 @@ public class cicilanKredit extends javax.swing.JFrame {
             labelTerima.setText("Ya");
         }
 
+//if user input character or something except number
         } catch (NumberFormatException e){
              JOptionPane.showMessageDialog(rootPane, "Anda memasukan character selain angka pada Finance Information");
         }
